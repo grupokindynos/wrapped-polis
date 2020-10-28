@@ -1,6 +1,7 @@
-pragma solidity ^0.5.0;
+pragma solidity ^0.6.2;
 
 import "./ERC20.sol";
+import "./Ownable.sol";
 
 contract WrappedPolis is ERC20("WrappedPolis", "WPOLIS"), Ownable {
     event Burned(address indexed burner, uint256 burnAmount);
